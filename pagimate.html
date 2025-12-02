@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Producto Final</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #1e1e2f, #0f0f1f);
+        color: white;
+        scroll-behavior: smooth;
+    }
+    header {
+        background-color: #0d0d1a;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 3px solid #32ff7e;
+    }
+    header h1 {
+        font-size: 48px;
+        color: #32ff7e;
+        margin: 0;
+    }
+    header p {
+        font-size: 22px;
+        color: #ffdd59;
+        margin-top: 10px;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #111126;
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    nav a {
+        color: #32ff7e;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 20px;
+        transition: 0.3s;
+    }
+    nav a:hover {
+        color: #ffdd59;
+    }
+    section {
+        padding: 40px 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+    section h2 {
+        color: #ff3f34;
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    h3 {
+        color: #32ff7e;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    ul {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-left: 20px;
+    }
+    p {
+        font-size: 20px;
+        line-height: 1.7;
+    }
+    .ejemplo {
+        background-color: #222233;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+    td, th {
+        padding: 15px;
+        border: 1px solid white;
+    }
+    footer {
+        background-color: #0d0d1a;
+        text-align: center;
+        padding: 15px;
+        border-top: 3px solid #32ff7e;
+        font-size: 18px;
+    }
+    .exercise {
+        background-color: #111126;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+    }
+    .exercise p {
+        font-weight: bold;
+    }
+    .exercise span {
+        color: #ffdd59;
+    }
+    button {
+        margin-top:10px; 
+        padding:12px 25px; 
+        font-size:18px; 
+        border:none; 
+        border-radius:12px; 
+        cursor:pointer; 
+        transition:0.3s;
+        color:white;
+    }
+    button:hover {
+        opacity:0.8;
+    }
+    .video-container {
+        text-align:center;
+        margin-top:30px;
+    }
+    /* Estilo para botones extra navegación rápida */
+    .toggle-btn {
+        font-weight:bold;
+        transition: 0.3s;
+    }
+</style>
+</head>
+<body>
+
+<header id="inicio">
+    <h1>Producto Final</h1>
+    <p>Una bienvenida a todos los del Colegio José María Velaz y este es nuestro producto final.</p>
+</header>
+
+<nav>
+    <a href="#inyectiva">Inyectiva</a>
+    <a href="#sobreyectiva">Sobreyectiva</a>
+    <a href="#biyectiva">Biyectiva</a>
+    <a href="#comparativa">Comparativa</a>
+    <a href="#herramientas">Herramientas</a>
+    <a href="#ejercicios">Ejercicios</a>
+</nav>
+
+<section id="inyectiva">
+    <h2>Función Inyectiva</h2>
+    <p>Una función es <b>inyectiva</b> si cada elemento del codominio tiene como máximo una preimagen, es decir, no hay dos elementos del dominio que se asignen al mismo valor.</p>
+    
+    <h3>⭐ Características clave de una función inyectiva</h3>
+    <ul>
+        <li><b>Unicidad:</b> Cada valor del codominio está asociado a un único elemento del dominio.</li>
+        <li><b>Sin repeticiones:</b> No puede haber valores repetidos en la imagen de la función.</li>
+        <li><b>Formalmente:</b> Si f(x1) = f(x2), entonces x1 = x2.</li>
+        <li><b>Gráficamente:</b> Una línea horizontal corta la gráfica como máximo una vez.</li>
+    </ul>
+
+    <h3>📘 Ejemplos explicados</h3>
+    <div class="ejemplo">
+        <p><b>Ejemplo 1:</b> f(x) = 2x → Sí es inyectiva, porque no se repiten valores.</p>
+        <p><b>Ejemplo 2:</b> f(x) = x² en los reales → NO es inyectiva, porque f(2) = f(-2).</p>
+    </div>
+</section>
+
+<section id="sobreyectiva">
+    <h2>Función Sobreyectiva</h2>
+    <p>Una función es <b>sobreyectiva</b> si cada elemento del codominio tiene al menos un elemento del dominio que se le asigna. En otras palabras, la función "cubre" todo el codominio.</p>
+
+    <h3>⭐ Características clave de una función sobreyectiva</h3>
+    <ul>
+        <li><b>Cubre todo el codominio:</b> No hay valores “sin ser tocados”.</li>
+        <li><b>Existencia garantizada:</b> Cada elemento del codominio tiene al menos un preimagen.</li>
+        <li><b>No importa si se repiten:</b> A diferencia de la inyectiva, aquí sí pueden repetirse valores mientras no falte ninguno.</li>
+        <li><b>Formalmente:</b> Para todo elemento y en el codominio, existe un x tal que f(x) = y.</li>
+        <li><b>Gráficamente:</b> Una línea horizontal debe cortar la gráfica al menos una vez en todos los valores permitidos del eje Y.</li>
+    </ul>
+
+    <h3>📘 Ejemplos explicados</h3>
+    <div class="ejemplo">
+        <p><b>Ejemplo 1:</b> f(x) = x³ en los reales → Es sobreyectiva porque alcanza todos los valores reales.</p>
+        <p><b>Ejemplo 2:</b> f(x) = sen(x), codominio = [-1,1] → SÍ es sobreyectiva.</p>
+        <p><b>Ejemplo 3:</b> f(x) = 2x, codominio = ℝ → NO es sobreyectiva, porque no alcanza valores no múltiplos de 2.</p>
+    </div>
+</section>
+
+<section id="biyectiva">
+    <h2>Función Biyectiva</h2>
+    <p>Una función es <b>biyectiva</b> si es a la vez inyectiva y sobreyectiva. Esto significa que cada elemento del codominio tiene exactamente un preimagen en el dominio.</p>
+
+    <h3>⭐ Características clave de una función biyectiva</h3>
+    <ul>
+        <li><b>Unicidad + Cobertura:</b> Cada elemento del codominio tiene exactamente un preimagen.</li>
+        <li><b>Invertible:</b> Siempre se puede encontrar una función inversa f⁻¹.</li>
+        <li><b>Formalmente:</b> La función es inyectiva y sobreyectiva.</li>
+        <li><b>Gráficamente:</b> Línea horizontal corta la gráfica exactamente una vez en todo el codominio.</li>
+    </ul>
+
+    <h3>📘 Ejemplos explicados</h3>
+    <div class="ejemplo">
+        <p><b>Ejemplo 1:</b> f(x) = x + 5, dominio y codominio = ℝ → Es biyectiva.</p>
+        <p><b>Ejemplo 2:</b> f(x) = 2x + 1, dominio y codominio = ℝ → Es biyectiva.</p>
+    </div>
+
+    <!-- BOTONES extra y navegación rápida -->
+    <div style="margin-top:28px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+        <button onclick="window.location.href='#inyectiva'" class="toggle-btn" style="background:#36b0ff;">Ir a Inyectiva</button>
+        <button onclick="window.location.href='#sobreyectiva'" class="toggle-btn" style="background:#ffd24a;">Ir a Sobreyectiva</button>
+        <button onclick="window.location.href='#biyectiva'" class="toggle-btn" style="background:#34d399;">Ir a Biyectiva</button>
+        <button onclick="window.location.href='#comparativa'" class="toggle-btn" style="background:#ff8a00;">Ir a Comparativa</button>
+        <button onclick="window.location.href='#ejercicios'" class="toggle-btn" style="background:#ff3f34;">Ir a Ejercicios</button>
+    </div>
+</section>
+
+<section id="comparativa">
+    <h2>📊 Tabla Comparativa</h2>
+    <table>
+        <tr style="background:#003366;">
+            <th>Tipo de Función</th>
+            <th>Características</th>
+            <th>Ejemplo</th>
+        </tr>
+        <tr style="background:#003300;">
+            <td>Inyectiva</td>
+            <td>Imágenes únicas, sin colisiones, línea horizontal corta a lo sumo una vez.</td>
+            <td>f(x)=2x</td>
+        </tr>
+        <tr style="background:#004d2a;">
+            <td>Sobreyectiva</td>
+            <td>Cubre todo el codominio, cada valor tiene una preimagen.</td>
+            <td>f(x)=x³ (codominio=ℝ)</td>
+        </tr>
+        <tr style="background:#55002b;">
+            <td>Biyectiva</td>
+            <td>Inyectiva + Sobreyectiva, tiene inversa.</td>
+            <td>f(x)=3x−2</td>
+        </tr>
+    </table>
+</section>
+
+<section id="herramientas" style="padding:40px; background:#1a0033; margin:40px auto; width:85%; border-radius:20px; border:2px solid rgba(255,255,255,0.4);">
+<h2 style="color:#c77dff; font-size:40px; text-align:center;">📘 ¿Qué utilizamos para crear este Producto Final?</h2>
+<p style="color:white; font-size:22px; line-height:1.7; margin-top:20px;">
+Este trabajo fue elaborado como si fuera un <b>cuaderno digital del Profe Galo</b>, pero llevado a un nivel más profesional y moderno. A continuación, se detallan las herramientas, tecnologías y métodos aplicados para construir este proyecto educativo de alta calidad.
+</p>
+
+<h3 style="color:#da9fff; font-size:28px; margin-top:25px;">🧠 1. Inteligencia Artificial (IA)</h3>
+<p style="color:white; font-size:20px; line-height:1.7;">
+La IA se utilizó como apoyo para generar textos explicativos, ejemplos, estructuras y organización del contenido matemático. Sirvió como guía conceptual, pero la esencia, el diseño y la identidad del proyecto pertenecen a los creadores: <b>Diego Toaza, Elvis Yanez y Juan Moreno</b>.
+</p>
+
+<h3 style="color:#da9fff; font-size:28px; margin-top:25px;">🖥️ 2. Visual Studio Code</h3>
+<p style="color:white; font-size:20px; line-height:1.7;">
+El editor principal utilizado para escribir, organizar y estructurar todo el código HTML, CSS y JavaScript. Permite visualizar los cambios en tiempo real y trabajar de manera profesional.
+</p>
+
+<h3 style="color:#da9fff; font-size:28px; margin-top:25px;">🔥 3. HTML5 – Lenguaje base del proyecto</h3>
+<ul style="color:white; font-size:20px; line-height:1.6; margin-left:20px;">
+<li>Se usó para estructurar todo el contenido matemático.</li>
+<li>Organización en secciones grandes y ordenadas.</li>
+<li>Creación de botones, tablas, enlaces y navegación suave.</li>
+</ul>
+
+<h3 style="color:#da9fff; font-size:28px; margin-top:25px;">🎨 4. CSS3 – Estilos, colores y animaciones</h3>
+<p style="color:white; font-size:20px; line-height:1.7;">
+Se utilizaron colores llamativos, degradados, sombras, efectos de hover, transiciones suaves y diseños adaptados al estilo de un cuaderno dinámico, divertido y muy visual.
+</p>
+
+<h3 style="color:#da9fff; font-size:28px; margin-top:25px;">⚙️ 5. JavaScript – Animaciones y movimientos</h3>
+<p style="color:white; font-size:20px; line-height:1.7;">
+Se implementaron efectos de movimiento, botones interactivos, navegación animada y funciones que hacen que la página se sienta viva y fluida.
+</p>
+
+<h3 style="color:#da9fff; font-size:28px; margin-top:25px;">📸 6. Imágenes ilustrativas</h3>
+<p style="color:white; font-size:20px; line-height:1.7;">
+Se añadieron imágenes matemáticas estilo cuaderno escolar, flechas, diagramas y conceptos representados visualmente para facilitar el aprendizaje de funciones inyectivas, sobreyectivas y biyectivas.
+</p>
+
+<h3 style="color:#da9fff; font-size:28px; margin-top:25px;">🎓 Producto Final para el Profe Galo</h3>
+<p style="color:white; font-size:22px; line-height:1.7;">
+Este documento está pensado como un <b>trabajo final completo, explicado, bonito, interactivo y muy bien presentado</b>. No es una simple página web: es como un cuaderno moderno lleno de ejemplos, teoría, colores y secciones claras. Representa el esfuerzo del curso y demuestra conocimiento sólido sobre funciones.
+</p>
+
+<button onclick="window.location.href='#inicio'">
+🔙 Volver al Inicio
+</button>
+</section>
+
+<section id="ejercicios">
+    <h2>Ejercicios Resueltos</h2>
+
+    <div class="exercise">
+        <p>1. f(x) = x², dominio ℝ, codominio ℝ → ¿Es inyectiva, sobreyectiva o biyectiva?</p>
+        <p>Respuesta: <span>No inyectiva, no sobreyectiva, no biyectiva</span></p>
+    </div>
+
+    <div class="exercise">
+        <p>2. f(x) = x³, dominio ℝ, codominio ℝ → ¿Es inyectiva, sobreyectiva o biyectiva?</p>
+        <p>Respuesta: <span>Inyectiva, sobreyectiva y biyectiva</span></p>
+    </div>
+
+    <div class="exercise">
+        <p>3. f(x) = sen(x), codominio [-1,1] → ¿Es sobreyectiva?</p>
+        <p>Respuesta: <span>Sí, es sobreyectiva</span></p>
+    </div>
+
+    <div class="video-container">
+        <h3 style="color:#32ff7e;">📹 Video Explicativo</h3>
+        <iframe width="80%" height="450" src="https://www.youtube.com/embed/xhBWUbY1VrM?si=_Ev0PL2JPas_8LOB" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+
+<footer>
+    <p>Créditos: Diego Toaza, Elvis Yanez y Juan David Moreno</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
